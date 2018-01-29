@@ -43,9 +43,9 @@ public class VehicleController {
 			return new ResponseEntity<Vehicle>(HttpStatus.BAD_REQUEST);
 		}
 		return new ResponseEntity<Vehicle>(savedVehicle, HttpStatus.OK);
-//		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/id")
-//				.buildAndExpand(savedVehicle.getId())
-//				.toUri();
-//		return ResponseEntity.created(location).build();
+		/*URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/id")
+				.buildAndExpand(savedVehicle.getId())
+				.toUri();
+		return ResponseEntity.created(location).build();*/
 	}
 }
